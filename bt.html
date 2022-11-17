@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // ------------------bài 2
+    // let input = prompt("Nhap so")
+    // let text = ""
+    // for (let i = 0; i < input.length; i++) {
+    //     if (input[i] % 2 === 0 && input[i+1] % 2 === 0){
+    //        text+= input[i] + "-"
+    //     }
+    //     else text+= input[i]
+    // }
+    // console.log(text)
+
+
+    // let input = prompt("nhap so : "). split("")
+    // let arr = [input[0]]
+    // for (let i = 1; i < input.length; i++) {
+    //     if(input[i-1] % 2 === 0 && input[i] % 2 === 0){
+    //         arr.push("-",input[i])
+    //     }
+    //     else arr.push(input[i])
+    // }
+    // console.log(arr)
+
+
+
+
+//bài 3
+    let input = prompt("nhap so : "). split("")
+    for (let i = 0; i < input.length; i++) {
+        if(input[i] === input[i].toLowerCase()){
+            input[i] = input[i].toUpperCase()
+        }
+        else {
+            input[i] = input[i].toLowerCase()
+        }
+    }
+    console.log(input.join(""))
+</script>
+</body>
+</html>
